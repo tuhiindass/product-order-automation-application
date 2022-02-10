@@ -1,0 +1,6 @@
+--- 
+server:
+  port: 
+  servlet.context-path:
+application:
+  url: 

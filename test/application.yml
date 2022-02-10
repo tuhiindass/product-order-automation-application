@@ -1,0 +1,32 @@
+---
+server:
+  port: 8080
+  servlet.context-path: /api/v1
+application:
+  url: https://www.saucedemo.com/
+  user:
+    id: standard_user
+    password: secret_sauce
+  loginPage:
+    userName.xpath: //input[@id='user-name']
+    password.xpath: //input[@id='password']
+    login.xpath: //input[@id='login-button']
+  productPage:
+    productSearch.xpath: //*[text()='{productName}']
+    addToCart.xpath: //*[text()='Add to cart']
+  cartPage:
+    viewCart.xpath: //a[@class='shopping_cart_link']
+    checkout.xpath: //button[@id='checkout']  
+  addressPage:
+    firstName.xpath: //input[@id='first-name']
+    lastName.xpath:  //input[@id='last-name']
+    zipCode.xpath: //input[@id='postal-code']
+    addContinueButton.xpath:  //input[@id='continue']
+  paymentPage:
+    itemTotalAmount.xpath: //div[@class='summary_subtotal_label']
+    itemTaxAmount.xpath:  //div[@class='summary_tax_label']
+    finalTotalAmount.xpath: //div[@class='summary_total_label']
+    finishButton.xpath: //button[@id='finish']
+  homePage:
+    menu.xpath: //button[@id='react-burger-menu-btn']
+    logout.xpath: //a[@id='logout_sidebar_link']
